@@ -1,13 +1,14 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import {Home, About, Contact, Services} from './components/pages'
+import {Navbar} from './components/pages'
 import './App.css'
 
 function App() {
-
+//BrowserRouter < Navbar
   return (
     <>
       <div className='App'>
-        <BrowserRouter>
+        <BrowserRouter> 
           <Routes>
             <Route path='/' element={<Home />}></Route>
             <Route path='/about' element={<About />}></Route>
